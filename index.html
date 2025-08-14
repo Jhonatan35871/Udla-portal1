@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>UDLA Quito · Iniciar sesión</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body class="login-bg">
+  <div class="login-card">
+    <img src="assets/img/logo_udla.png" alt="UDLA" class="logo" />
+    <h1 class="title">Portal Estudiantil</h1>
+    <form id="loginForm">
+      <label>Usuario</label>
+      <input type="text" id="username" placeholder="Ej: Jhonata.S" required />
+      <label>Contraseña</label>
+      <input type="password" id="password" placeholder="••••" required />
+      <button type="submit" class="btn primary">Ingresar</button>
+      <p id="loginError" class="error"></p>
+    </form>
+    <p class="hint">Usuario demo: <b>Jhonata.S</b> · Clave: <b>2341</b></p>
+  </div>
+  <script src="assets/js/auth.js"></script>
+</body>
+</html>
