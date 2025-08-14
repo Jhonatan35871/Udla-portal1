@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>UDLA Quito · Portal</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <header class="app-header">
+    <div class="brand">
+      <img src="assets/img/logo_udla.png" alt="UDLA" />
+      <div>
+        <h1>Portal Estudiantil UDLA</h1>
+        <span class="subtitle">Quito</span>
+      </div>
+    </div>
+    <div class="user-area">
+      <span id="userName">Estudiante</span>
+      <button class="btn outline" id="logoutBtn">Cerrar sesión</button>
+    </div>
+  </header>
+
+  <div class="layout">
+    <nav class="sidebar">
+      <button class="nav-link active" data-section="inicio">Inicio</button>
+      <button class="nav-link" data-section="notas">Calificaciones</button>
+      <button class="nav-link" data-section="horario">Horario</button>
+      <button class="nav-link" data-section="perfil">Perfil</button>
+    </nav>
+    <main class="content">
+      <section id="inicio" class="section visible">
+        <h2>Bienvenido/a</h2>
+        <p>Este es un portal de demostración similar al de la UDLA Quito. Usa el menú para navegar.</p>
+        <div class="cards">
+          <div class="card"><h3>Materias inscritas</h3><p id="kpiMaterias">—</p></div>
+          <div class="card"><h3>Promedio</h3><p id="kpiPromedio">—</p></div>
+          <div class="card"><h3>Créditos</h3><p id="kpiCreditos">—</p></div>
+        </div>
+      </section>
+
+      <section id="notas" class="section">
+        <h2>Calificaciones</h2>
+        <div class="table-wrap">
+          <table id="tablaNotas">
+            <thead>
+              <tr>
+                <th>Materia</th><th>Parcial 1</th><th>Parcial 2</th><th>Final</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </section>
+
+      <section id="horario" class="section">
+        <h2>Horario semanal</h2>
+        <div class="schedule" id="schedule"></div>
+      </section>
+
+      <section id="perfil" class="section">
+        <h2>Perfil</h2>
+        <div class="profile">
+          <img src="assets/img/avatar.png" alt="Foto" class="avatar" />
+          <div>
+            <p><strong>Nombre:</strong> <span id="perfilNombre">—</span></p>
+            <p><strong>Carrera:</strong> <span id="perfilCarrera">—</span></p>
+            <p><strong>Correo:</strong> <span id="perfilCorreo">—</span></p>
+            <p><strong>ID:</strong> <span id="perfilId">—</span></p>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <footer class="app-footer">
+    <small>Demo no oficial · Universidad de las Américas (UDLA) · Quito</small>
+  </footer>
+
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
